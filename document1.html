@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select name="colorsoption" id="colorsoption" onchange="setmypagecolor()">
+    <!-- <option value="red"> Red </option> -->
+    <option value="black">Black</option>
+    <option value="Brown">Brown</option>
+    <option value="green">Green</option>
+  </select>
+  <script>
+    function setmypagecolor()
+    {
+      let pagecolor= document.getElementById("colorsoption").value;
+      //let pagecolor=  prompt("Please enter your color choice");
+      document.body.style.backgroundColor = pagecolor;
+    }
+    
+    
+  </script>
+</body>
+</html>
